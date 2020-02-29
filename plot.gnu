@@ -17,7 +17,7 @@ do for [k=0:99:1] {
 	## Comment the output to file if you want to see directly in the screen
 	set output 'pict/'.k.'.png'
 	set label 1 "".k at -0.01,0.0335 tc lt 8
-	plot [-0.01373:0.01373] [-0.001:0.02646] "data2.dat" every ::(k*part)::((k+1)*part-1) with points pt 6 ps 1.5
+	plot [-0.01373:0.01373] [-0.001:0.02646] "data.dat" every ::(k*part)::((k+1)*part-1) with points pt 6 ps 1.5
 	## If you want to see directly in the screen is better to pause or it will be very quick
 	#pause 0.5
 }
