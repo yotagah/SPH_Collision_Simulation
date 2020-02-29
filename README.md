@@ -29,10 +29,13 @@ Plastic collision: https://www.youtube.com/watch?v=kVukwV27IQQ
 Elastic collision: https://www.youtube.com/watch?v=1aEDRHqGNiU
 
 
-Other simulation results based in the same code
+Other simulation results based on the same code:
 
 Two circular bodies central collision: https://www.youtube.com/watch?v=0Ibab7-Jmrk
 
 Two circular bodies deslocated collision: https://www.youtube.com/watch?v=T0jQkL9EL4Q
 
 Two circular bodies lateral collision: https://www.youtube.com/watch?v=GW9220yNQmU
+
+
+Accretion disk of a Dwarf Novae simulated with the same principles: https://www.youtube.com/watch?v=T3VKhmvu-gQ
