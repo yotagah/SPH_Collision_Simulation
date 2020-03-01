@@ -54,7 +54,7 @@ void directFind(particles_t *particles, int_pairs_t *int_pairs) {
 
             mh = (particles->particle[i].h + particles->particle[j].h) / 2.0;
 
-            if(m_dist < scale_k*mh) { // IF is within the SPH radius
+            if(m_dist < scale_k*mh) { // If is within the SPH radius
                 if(int_pairs->quant+1 > int_pairs->alocated) // If there is no memory alocated for the pairs
                     alocMorePairs(int_pairs); // Alocate more memory
 

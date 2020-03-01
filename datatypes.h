@@ -24,7 +24,7 @@ typedef struct particle_t {
 	double dedt;				// Energy var.		(J/s)
 	double c;					// Sound speed 		(m/s)
 
-	double rho_prev;				// Previous density
+	double rho_prev;			// Previous density
 	double e_prev;				// Previous energy
 
 	double h;					// Smoothing size
@@ -44,22 +44,22 @@ typedef struct particle_t {
 typedef struct particles_t {
 	int quant; 				// Particles quantity
 	particle_t *particle; 	// Particles pointer
-	int alocated;			// Alocated space quantity
+	int alocated;			// Alocated memory quantity
 } particles_t;
 
 // Interaction pair
 typedef struct int_pair_t {
 	double w;				// Weight function (0.0 to 1.0)
-	double dwdx[2];			// Derivative weight function (-1.0 to 1.0)
+	double dwdx[DIM];		// Derivative weight function (-1.0 to 1.0)
 	int i;					// First particle of the pair
 	int j;					// Second particle of the pair
 } int_pair_t;
 
-// Interation pairs
+// Interaction pairs
 typedef struct int_pairs_t {
 	int quant; 				// Pairs quantity
 	int_pair_t *int_pair;	// Pairs pointer
-	int alocated;			// Alocated space quantity
+	int alocated;			// Alocated memory quantity
 } int_pairs_t;
 
 #endif

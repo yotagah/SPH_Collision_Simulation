@@ -52,11 +52,7 @@ Mkfile.old
 dkms.conf
 
 # The executable
-SPH
 sph
 
 # Files generated during the simulation
-/elastic
-/plastic
 data.dat
-data2.dat

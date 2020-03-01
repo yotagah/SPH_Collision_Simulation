@@ -16,7 +16,7 @@ After the compile finishes, run the sph executable directing the output to a fil
 $ ./sph > data.dat
 ```
 
-The simulation will take a while and when it finishes, run the load 'plot.gnu' command into GNUPLOT to generate the "frames" of the simulation in the pict folder (which has to be created first).
+The simulation will take a while and when it finishes, run the load 'plot.gnu' command into GNUPLOT to generate the "frames" of the simulation in the pict folder (which has to be created first) or directly in the screen.
 
 ```sh
 gnuplot> load 'plot.gnu'
