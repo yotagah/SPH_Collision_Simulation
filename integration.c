@@ -24,7 +24,7 @@ void singleStep(particles_t *particles, int_pairs_t *int_pairs) {
     totalStressTensor(particles, int_pairs, 8.0e10); // shear modulus - Armco Iron
 
     // Forces
-    zerateForces(particles);
+    resetForces(particles);
     artificialViscosity(particles, int_pairs);
     //artificialHeat(particles, int_pairs);
     internalForce(particles, int_pairs);
@@ -45,7 +45,7 @@ void directFind(particles_t *particles, int_pairs_t *int_pairs) {
     
     scale_k = 2; // Scale factor for: cubic spline kernel by W4 - Spline (Monaghan 1985)
 
-    int_pairs->quant = 0; // Zerate number of interaction pairs
+    int_pairs->quant = 0; // Reset number of interaction pairs
 
     for(i = 0; i < particles->quant; i++) { // All particles
         for(j = i+1; j < particles->quant; j++) { // All pairs

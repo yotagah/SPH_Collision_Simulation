@@ -36,8 +36,8 @@ void totalStressTensor(particles_t *parts, int_pairs_t *pairs, double mi) {
 		mprhoi = (parts->particle[i].m / parts->particle[i].rho)*0.5;
 		mprhoj = (parts->particle[j].m / parts->particle[j].rho)*0.5;
 
-		aux_epsilon = 0.0; // Initialy zerates the sum
-		aux_R = 0.0; // Initialy zerates the sum
+		aux_epsilon = 0.0; // Initialy resets the sum
+		aux_R = 0.0; // Initialy resets the sum
 
    		subVector(parts->particle[j].v, parts->particle[i].v, dv); // Speed difference to dv variable
 

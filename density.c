@@ -61,7 +61,7 @@ void conDensity(particles_t *parts, int_pairs_t *pairs) {
     double dv; // Speed difference
     double vcc; // Speed differential
 
-    for(k = 0; k < parts->quant; k++) { // Zerate the rate of variation of density in all particles
+    for(k = 0; k < parts->quant; k++) { // Reset the rate of variation of density in all particles
         parts->particle[k].drhodt = 0.0;
     }
 
@@ -87,7 +87,7 @@ void copy2InitDensity(particles_t *parts) {
 
     int k;
 
-    for(k = 0; k < parts->quant; k++) { // Zerate the rate of variation of density in all particles
+    for(k = 0; k < parts->quant; k++) { // Reset the rate of variation of density in all particles
         parts->particle[k].rho_0 = parts->particle[k].rho;
     }
 }
